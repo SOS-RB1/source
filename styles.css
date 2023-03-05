@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.background {
+  background-color: rgb(69, 69, 69);
+}
+
+div {
+  text-align: left;
+  
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+p {
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 3px;
+
+}
+
+.btn {
+  background-color: rgb(92, 92, 92);
+  color: white;
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 3px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.red-dot {
+  background-color: rgb(255, 82, 82);
+}
+
+.orange-dot {
+  background-color: rgb(255, 152, 0);
+}
+
+.yellow-dot {
+  background-color: rgb(255, 214, 0);
+}
+
+.green-dot {
+  background-color: rgb(100, 221, 23);
+}
+
+.blue-dot {
+  background-color: rgb(64, 196, 255);
+}
+
+.indigo-dot {
+  background-color: rgb(197, 202, 233);
+}
+
+.violet-dot {
+  background-color: rgb(234, 128, 252);
+}
+
+.b-dot {
+  background-color: rgb(69, 69, 69);
+}
+
+.dot-text span {
+  position: absolute;
+  top: -22px;
+}
+
+.dot-text {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  margin-right: 77px;
+  margin-bottom: 77px;
+  display: inline-block;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(129, 129, 129);
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: red;
+}
