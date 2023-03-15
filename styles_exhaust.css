@@ -54,15 +54,4 @@ body {
   .card img {
     width: 300px;
   }
-
-  .card h2 {
-    margin: 7px;
-    font-size: 1.3rem;
-  }
-  
-  .card p {
-    margin: 0 7px 7px 7px;
-    font-size: 0.8rem;
-    line-height: 1.3;
-  }
 }
