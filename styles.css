@@ -114,8 +114,5 @@ a:visited {
 
 a:hover {
   color: white;
-}
-
-a:active {
-  color: red;
+  text-decoration: underline;
 }
