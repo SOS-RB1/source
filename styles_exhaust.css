@@ -46,6 +46,20 @@ body {
   line-height: 1.5;
 }
 
+footer a:link {
+  color: rgb(255, 82, 82);
+}
+
+
+footer a:visited {
+  color: rgb(255, 82, 82);
+}
+
+footer a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   .card {
     width: 300px;   
