@@ -5,25 +5,12 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 3px;
 }
 
 .article-container {
   max-width: 600px;
   margin: 0 auto;
-}
-
-a:link {
-  color: rgb(255, 82, 82);
-}
-
-a:visited {
-  color: rgb(255, 82, 82);
-}
-
-a:hover {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
 }
 
 header {
@@ -48,10 +35,10 @@ footer {
 }
 
 footer a {
-  color: white !important;
+  color: white;
 }
 
 footer a:hover {
-  text-decoration: underline !important;
-  color: rgb(255, 82, 82) !important;
+  text-decoration: underline;
+  color: rgb(255, 82, 82);
 }
