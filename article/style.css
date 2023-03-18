@@ -1,5 +1,11 @@
 body {
 	font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
 }
 
 .article-container {
@@ -11,7 +17,6 @@ a:link {
   color: rgb(255, 82, 82);
 }
 
-
 a:visited {
   color: rgb(255, 82, 82);
 }
@@ -21,3 +26,32 @@ a:hover {
   text-decoration: none;
 }
 
+header {
+  background-color: black;
+  color: #fff;
+  padding: 9px;
+}
+
+header img {
+  margin-right: 10px;
+  margin-left: 20px;
+  width: 130px;
+  height: auto;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(69, 69, 69);
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer a:hover {
+  text-decoration: underline !important;
+  color: rgb(255, 82, 82) !important;
+}
