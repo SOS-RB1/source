@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
 }
 
 .article-container {
@@ -40,9 +40,10 @@ header img {
 
 footer {
   width: 100%;
-  background-color: rgb(69, 69, 69);
+  background-color: rgb(35,35,35);
   padding: 3px;
-  text-align: center;
+  padding-left: 20px; 
+  text-align: left;
   color: white;
 }
 

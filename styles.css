@@ -19,7 +19,7 @@ header img {
 }
 
 main {
-  padding: 20px;
+  padding: 10px;
 }
 
 h1 {
@@ -138,15 +138,15 @@ a:hover {
 
 footer {
   width: 100%;
-  background-color: rgb(69, 69, 69);
+  background-color: rgb(35,35,35);
   padding: 3px;
-  text-align: center;
+  padding-left: 20px; 
+  text-align: left;
   color: white;
 }
 
 footer a {
   color: white !important;
-  text-decoration: underline !important;
 }
 
 footer a:hover {
