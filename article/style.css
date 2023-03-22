@@ -8,6 +8,12 @@ main {
   padding: 10px;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .article-container {
   max-width: 600px;
   margin: 0 auto;
