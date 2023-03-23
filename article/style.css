@@ -8,12 +8,10 @@ main {
   padding: 10px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.center {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .article-container {
