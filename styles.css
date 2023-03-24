@@ -25,13 +25,6 @@ main {
   background-color: rgb(69, 69, 69);
 }
 
-img {
-  width: 200px;
-  height: auto;
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
 .btn {
   background-color: rgb(92, 92, 92);
   color: white;
