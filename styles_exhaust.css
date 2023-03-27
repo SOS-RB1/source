@@ -4,14 +4,19 @@ body {
   padding: 0;
 }
 
+main {
+  padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-main {
-  padding: 10px;
 }
 
 .card {
