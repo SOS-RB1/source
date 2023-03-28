@@ -11,12 +11,8 @@ main {
 img {
   max-width: 100%;
   width: auto;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .article-container {
