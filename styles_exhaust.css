@@ -9,8 +9,13 @@ main {
 }
 
 img {
-  max-width: 100%;
-  width: auto;
+  max-width: 100%; 
+  width: auto; 
+  max-height: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  object-fit: cover;
 }
 
 .card-container {
@@ -58,8 +63,8 @@ img {
 }
 
 header {
+  width: auto;
   background-color: black;
-  color: #fff;
   padding: 9px;
 }
 
@@ -70,7 +75,7 @@ header img {
 }
 
 footer {
-  width: 100%;
+  width: auto;
   background-color: rgb(35,35,35);
   padding: 3px;
   padding-left: 20px; 

@@ -6,6 +6,7 @@ body {
 }
 
 header {
+  width: auto;
   background-color: black;
   padding: 9px;
 }
@@ -116,7 +117,7 @@ a:hover {
 }
 
 footer {
-  width: 100%;
+  width: auto;
   background-color: rgb(35,35,35);
   padding: 3px;
   padding-left: 20px; 
