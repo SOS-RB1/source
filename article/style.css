@@ -8,16 +8,9 @@ main {
   padding: 10px;
 }
 
-img {
-  width: 600px;
-  height: 338px;
-  max-width: 100%; 
-  width: auto; 
-  max-height: 100%;
-  height: auto;
+.banner-container {
+  max-width: 600px;
   margin: 0 auto;
-  display: block;
-  object-fit: cover;
 }
 
 .container-16x9 {
