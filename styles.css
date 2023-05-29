@@ -5,16 +5,11 @@ body {
   color: white;
 }
 
-header {
-  width: auto;
-  background-color: black;
-  padding: 9px;
-}
-
 header img {
   margin-left: 20px;
   width: 155px;
   height: auto;
+  padding: 12px;
 }
 
 main {
@@ -205,4 +200,101 @@ footer a:hover {
 .article-container {
   max-width: 600px;
   margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 35px;
+  background-color: black;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+  z-index: 100;
+}
+
+.menu li:hover a {
+  color: rgb(255, 82, 82);
+}
+
+.menu li {
+  list-style-type: none !important;
+  padding: 5px 14px;
+}
+
+.dropdown-content {
+  z-index: 100;
+}
+
+.dropdown {
+  background-color: black;
+  padding: 1em 0;
+  position: fixed;
+  display: none;
+}
+
+.dropdown li {
+  width: 8em;
+}
+
+.dropdown li:hover a {
+  text-decoration: underline !important;
+}
+
+.dropdown-content:hover .dropdown {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  padding-bottom: 19px;
+}
+
+@media (max-width: 677px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 139px;
+    top: 76px;
+  }
 }
