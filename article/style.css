@@ -8,6 +8,22 @@ main {
   padding: 10px;
 }
 
+.btn-menu {
+  color: white;
+  background-color: black;
+  font-size: 16px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-menu:hover,
+.btn-menu:focus,
+.dropdown-content:hover .btn-menu,
+.dropdown-content:focus .btn-menu {
+  color: rgb(255, 82, 82);
+}
+
 header img {
   margin-left: 20px;
   width: 155px;
