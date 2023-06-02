@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    xml:space="preserve"
-   sodipodi:docname="logoW2.svg"
+   sodipodi:docname="exhaust-contact-logo-white.svg"
    inkscape:version="1.2.2 (b0a8486, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,7 +27,7 @@
      showguides="true"
      inkscape:zoom="2.8284271"
      inkscape:cx="72.655222"
-     inkscape:cy="29.875262"
+     inkscape:cy="30.228815"
      inkscape:window-width="1680"
      inkscape:window-height="995"
      inkscape:window-x="0"
@@ -38,7 +38,13 @@
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-3.7090381,-2.433482)"><g
+     transform="translate(-3.7090381,-2.433482)"><rect
+       style="font-variation-settings:'wght' 600;fill:#000000;stroke:#000000;stroke-width:2.5;stroke-opacity:0"
+       id="rect370"
+       width="59.395828"
+       height="21.103271"
+       x="0.83477932"
+       y="0.46216819" /><g
        id="g1628"><g
          id="g4478"
          transform="translate(-16.711783,-23.057869)"
