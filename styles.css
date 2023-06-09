@@ -5,6 +5,17 @@ body {
   color: white;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 header img {
   margin-left: 20px;
   width: 155px;
