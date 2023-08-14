@@ -93,6 +93,17 @@ header img {
   margin-bottom: 10px;
 }
 
+.iframe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+}
+
+.iframe-container iframe {
+  margin: 2px;
+}
+
 img {
   width: 100%;
 }

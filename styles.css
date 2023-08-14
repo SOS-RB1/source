@@ -137,6 +137,17 @@ a:hover {
   text-decoration: underline;
 }
 
+.iframe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+}
+
+.iframe-container iframe {
+  margin: 2px;
+}
+
 footer {
   background-color: rgb(35, 35, 35);
   color: white;
