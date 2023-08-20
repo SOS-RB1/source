@@ -115,11 +115,12 @@ img {
 
 .container-search {
   width: 260px;
+  padding-bottom: 12px;
 }
 
 .search-title {
-  padding-top: 6px;
-  padding-left: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 footer {
