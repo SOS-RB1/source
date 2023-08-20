@@ -113,6 +113,15 @@ img {
   height: auto;
 }
 
+.container-search {
+  width: 260px;
+}
+
+.search-title {
+  padding-top: 6px;
+  padding-left: 13px;
+}
+
 footer {
   background-color: rgb(35, 35, 35);
   color: white;
