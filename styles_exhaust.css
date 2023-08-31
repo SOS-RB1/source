@@ -84,6 +84,7 @@ img {
 }
 
 .box-ban {
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +95,8 @@ img {
 }
 
 .box-ban img {
-  width: 600px;
+  
+  width: 100%;
 }
 
 .container-search {
