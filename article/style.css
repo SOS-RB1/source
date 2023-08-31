@@ -93,13 +93,13 @@ header img {
   margin-bottom: 10px;
 }
 
-.banner-container2 {
+.banner-container-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.banner-container2 a {
+.banner-container-2 a {
   margin-bottom: 20px;
 }
 
