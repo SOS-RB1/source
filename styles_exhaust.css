@@ -83,13 +83,13 @@ img {
   line-height: 1.5;
 }
 
-.banner-container-2 {
+.box-ban {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.banner-container-2 a {
+.box-ban a {
   margin-bottom: 20px;
 }
 
