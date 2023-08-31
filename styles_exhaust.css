@@ -83,34 +83,14 @@ img {
   line-height: 1.5;
 }
 
-.iframe-amazon {
+.banner-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 5px;
-  margin: 77px 0;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iframe-amazon iframe {
-  margin: 2px;
-}
-
-.banner-aside {
-  display: block;
-  margin: 10px auto;
-  text-align: center;
-  max-width: 970px;
-  margin: 77px 0;
-}
-
-.banner-aside a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-.banner-aside img {
-  width: 100%;
-  height: auto;
+.banner-container a {
+  margin-bottom: 20px;
 }
 
 .container-search {
