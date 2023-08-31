@@ -137,13 +137,13 @@ a:hover {
   text-decoration: underline;
 }
 
-.banner-container {
+.banner-container-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.banner-container a {
+.banner-container-2 a {
   margin-bottom: 20px;
 }
 
