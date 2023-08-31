@@ -95,8 +95,10 @@ img {
 }
 
 .box-ban img {
-  
-  width: 100%;
+  width: 100%; /* Szerokość 100% */
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .container-search {
