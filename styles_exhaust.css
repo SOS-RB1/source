@@ -28,7 +28,7 @@ main {
 .btn-menu:focus,
 .dropdown-content:hover .btn-menu,
 .dropdown-content:focus .btn-menu {
-  color: rgb(255, 82, 82);
+  color: rgb(214, 153, 255);
 }
 
 img {
@@ -155,7 +155,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline !important;
-  color: rgb(255, 82, 82) !important;
+  color: rgb(214, 153, 255) !important;
 }
 
 .banner-container {
@@ -228,7 +228,7 @@ img {
 }
 
 .menu li:hover a {
-  color: rgb(255, 82, 82);
+  color: rgb(214, 153, 255));
 }
 
 .menu li {

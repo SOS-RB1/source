@@ -32,7 +32,7 @@ main {
 .btn-menu:focus,
 .dropdown-content:hover .btn-menu,
 .dropdown-content:focus .btn-menu {
-  color: rgb(255, 82, 82);
+  color: rgb(214, 153, 255));
 }
 
 header img {
@@ -108,11 +108,11 @@ img {
 }
 
 a:link {
-  color: rgb(179, 0, 0);
+  color: rgb(124, 0, 219);
 }
 
 a:visited {
-  color: rgb(179, 0, 0);
+  color: rgb(124, 0, 219);
 }
 
 a:hover {
@@ -169,7 +169,7 @@ footer a {
 
 footer a:hover {
   text-decoration: underline !important;
-  color: rgb(255, 82, 82) !important;
+  color: rgb(214, 153, 255) !important;
 }
 
 * {
@@ -198,7 +198,7 @@ footer a:hover {
 }
 
 .menu li:hover a {
-  color: rgb(255, 82, 82);
+  color: rgb(214, 153, 255);
 }
 
 .menu li {
@@ -238,6 +238,52 @@ input[type="checkbox"] {
   font-size: 24px;
   user-select: none;
   padding-bottom: 12px;
+}
+
+.discount-text {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button-shopnow {
+  text-align: center;
+}
+
+.centered-button {
+  padding: 10px 30px;
+  background-color: #8100d6;
+  border: none;
+  border-radius: 33px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.centered-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+}
+
+.centered-button:hover {
+  background-color: #5c0099;
+}
+
+.centered-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8100d6;
+  border-radius: 33px;
+  z-index: -1;
 }
 
 @media (max-width: 677px) {
