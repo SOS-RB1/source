@@ -252,16 +252,15 @@ input[type="checkbox"] {
 }
 
 .centered-button {
-  padding: 10px 17px;
+  padding: 10px 30px;
   background-color: #8100d6;
   border: none;
   border-radius: 33px;
-}
-
-.centered-button a {
-  color: #ffffff;
+  cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
+  display: inline-block;
+  color: #ffffff; /* Dodajemy kolor tekstu */
+  font-size: 14px; /* Dodajemy rozmiar czcionki */
   font-weight: bold;
 }
 
