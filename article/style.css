@@ -32,7 +32,7 @@ main {
 .btn-menu:focus,
 .dropdown-content:hover .btn-menu,
 .dropdown-content:focus .btn-menu {
-  color: rgb(214, 153, 255));
+  color: rgb(214, 153, 255);
 }
 
 header img {
