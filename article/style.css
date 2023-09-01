@@ -259,14 +259,39 @@ input[type="checkbox"] {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  color: #ffffff; /* Dodajemy kolor tekstu */
-  font-size: 14px; /* Dodajemy rozmiar czcionki */
+  color: #ffffff;
+  font-size: 14px;
   font-weight: bold;
+  position: relative;
+  overflow: hidden; /* Dodajemy ukrywanie overflow */
+}
+
+.centered-button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
 .centered-button:hover {
   background-color: #5c0099;
+  color: #ffffff; /* Dodajemy kolor tekstu po najechaniu */
 }
+
+.centered-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8100d6;
+  border-radius: 33px;
+  z-index: -1;
+}
+
 
 @media (max-width: 677px) {
   .menu {
