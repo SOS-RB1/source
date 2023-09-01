@@ -274,18 +274,6 @@ input[type="checkbox"] {
   background-color: #5c0099;
 }
 
-.centered-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #8100d6;
-  border-radius: 33px;
-  z-index: -1;
-}
-
 @media (max-width: 677px) {
   .menu {
     display: none;
