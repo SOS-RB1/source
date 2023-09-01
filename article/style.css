@@ -263,7 +263,7 @@ input[type="checkbox"] {
   font-size: 14px;
   font-weight: bold;
   position: relative;
-  overflow: hidden; /* Dodajemy ukrywanie overflow */
+  overflow: hidden;
 }
 
 .centered-button a {
@@ -277,7 +277,7 @@ input[type="checkbox"] {
 
 .centered-button:hover {
   background-color: #5c0099;
-  color: #ffffff; /* Dodajemy kolor tekstu po najechaniu */
+  color: #ffffff;
 }
 
 .centered-button::before {
