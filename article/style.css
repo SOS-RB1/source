@@ -252,13 +252,10 @@ input[type="checkbox"] {
 }
 
 .centered-button {
-  padding: 10px 30px;
+  padding: 10px 17px;
   background-color: #8100d6;
   border: none;
   border-radius: 33px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
 }
 
 .centered-button a {
@@ -266,8 +263,6 @@ input[type="checkbox"] {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  position: relative;
-  z-index: 1;
 }
 
 .centered-button:hover {
