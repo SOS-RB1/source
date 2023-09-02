@@ -260,7 +260,7 @@ input[type="checkbox"] {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   position: relative;
   overflow: hidden;
