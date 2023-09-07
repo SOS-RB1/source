@@ -271,6 +271,23 @@ input[type="checkbox"] {
   color: #ffffff; /* Dodajemy kolor tekstu po najechaniu */
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #000000;
+  color: white;
+}
 
 @media (max-width: 677px) {
   .menu {
