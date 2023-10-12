@@ -107,6 +107,14 @@ img {
   width: 100%;
 }
 
+.description {
+  font-weight: bold;
+  font-style: italic;
+  color: grey;
+  margin-top: -3px;
+  padding-left: 14px;
+}
+
 a:link {
   color: rgb(124, 0, 219);
 }
