@@ -110,7 +110,7 @@ img {
 .description {
   font-weight: bold;
   font-style: italic;
-  color: grey;
+  color: #545454;
   margin-top: -3px;
   padding-left: 14px;
 }
