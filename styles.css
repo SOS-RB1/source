@@ -209,6 +209,8 @@ footer a:hover {
 }
 
 .container-16x9 {
+  max-width: 600px;
+  max-height: 337px;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -223,6 +225,7 @@ footer a:hover {
 }
 
 .short-container {
+  max-height: 999px;
   max-width: 300px;
   margin: 0 auto;
 }
