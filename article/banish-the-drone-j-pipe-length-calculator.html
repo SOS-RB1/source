@@ -196,7 +196,7 @@
         <p>
           If you cannot measure the temperature, use average values 510 m/s.
         </p>
-        <div class="calculator">
+        <div class="calculator-container">
           <label for="temperatureCelsius">Temperature in °C: </label>
           <input
             type="number"
@@ -206,9 +206,7 @@
           <button onclick="calculateSpeedOfSoundCelsius()">
             Calculate (°C)
           </button>
-        </div>
 
-        <div class="calculator">
           <label for="temperatureFahrenheit">Temperature in °F: </label>
           <input
             type="number"
@@ -218,41 +216,45 @@
           <button onclick="calculateSpeedOfSoundFahrenheit()">
             Calculate (°F)
           </button>
-        </div>
 
-        <p>
-          Speed of sound:
-          <span id="speedResult">Result will be displayed here</span>
-        </p>
+          <p>
+            Speed of sound:
+            <span id="speedResult">Result will be displayed here</span>
+          </p>
+        </div>
 
         <h2>J-Pipe Length Calculator (Quarter-Wave Resonator)</h2>
         <p>
           Enter the speed of sound and the frequency of the drone (Measured, for
           example, using the Spectroid app on a smartphone):
         </p>
-        <label for="speedOfSound">Speed of Sound [m/s]:</label>
-        <input
-          type="number"
-          id="speedOfSound"
-          name="speedOfSound"
-          min="0"
-          step="1"
-        />
-        <br />
+        <div class="calculator-container">
+          <label for="speedOfSound">Speed of Sound [m/s]:</label>
+          <input
+            type="number"
+            id="speedOfSound"
+            name="speedOfSound"
+            min="0"
+            step="1"
+          />
+          <br />
 
-        <label for="droneFrequency">Frequency of Drone [Hz]:</label>
-        <input
-          type="number"
-          id="droneFrequency"
-          name="droneFrequency"
-          min="0"
-          step="1"
-        />
+          <label for="droneFrequency">Frequency of Drone [Hz]:</label>
+          <input
+            type="number"
+            id="droneFrequency"
+            name="droneFrequency"
+            min="0"
+            step="1"
+          />
 
-        <br />
-        <button type="button" onclick="calculateWavelength()">Calculate</button>
+          <br />
+          <button type="button" onclick="calculateWavelength()">
+            Calculate
+          </button>
 
-        <p id="wavelengthResult"></p>
+          <p id="wavelengthResult"></p>
+        </div>
 
         <h2>Frequently Asked Questions (FAQ)</h2>
 
