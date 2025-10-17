@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Fake exhaust tips convert to real in Audi SQ5</title>
     <meta
@@ -64,21 +64,6 @@
       content="https://exhaust.contact/article/fake-exhaust-tips-convert-to-real-in-audi-sq5.html"
     />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Fake exhaust tips convert to real in Audi SQ5"
-    />
-    <meta
-      name="twitter:description"
-      content="Convert decorative rear tips to OEM Audi Sport tips (80A-071-904) — what to expect and how to fit them."
-    />
-    <meta
-      name="twitter:image"
-      content="https://exhaust.contact/assets/images/fake-exhaust-vs-real-audi-sq5.webp"
-    />
-
     <!-- JSON-LD (Article) -->
     <script type="application/ld+json">
       {
@@ -104,9 +89,9 @@
       }
     </script>
 
-    <!-- CMP (consent) styles + small script (isolated, non-blocking) -->
+    <!-- CMP (consent) styles + script (isolated, prefixed to avoid collisions) -->
     <style>
-      /* CMP prefixed styles to avoid collisions */
+      /* CMP prefixed styles to avoid collisions with your style.css */
       .ec-cookie-consent {
         position: fixed;
         left: 12px;
@@ -116,7 +101,7 @@
         background: rgba(20, 20, 20, 0.95);
         color: #fff;
         border-radius: 8px;
-        display: none; /* hidden until we decide to show to avoid layout shift */
+        display: none; /* hidden until we decide to show - prevents layout shifts */
         gap: 12px;
         align-items: center;
         z-index: 99999;
@@ -129,7 +114,7 @@
       .ec-cookie-consent p {
         margin: 0;
         font-size: 14px;
-        line-height: 1.2;
+        line-height: 1.25;
       }
       .ec-cookie-consent .ec-cc-buttons {
         margin-left: auto;
@@ -165,72 +150,11 @@
           width: 48%;
         }
       }
-
-      /* Small helper: accessible skip link */
-      .skip-link {
-        position: absolute;
-        left: -999px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-      }
-      .skip-link:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        left: 12px;
-        top: 12px;
-        background: #fff;
-        color: #000;
-        padding: 8px 12px;
-        z-index: 100000;
-      }
-
-      /* Minimal local navigation styles to avoid total dependency on external CSS for behavior */
-      .nav-toggle {
-        display: none;
-      } /* we will use JS to toggle class on .nav */
-      .navbar {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 12px;
-      }
-      .nav-links {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        gap: 8px;
-        align-items: center;
-      }
-      .nav-logo img {
-        height: 38px;
-        width: auto;
-        display: block;
-      }
-      @media (max-width: 840px) {
-        .nav-links {
-          display: none;
-        }
-        .nav-links.open {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-          background: #111;
-          padding: 12px;
-          position: absolute;
-          top: 64px;
-          left: 12px;
-          right: 12px;
-          border-radius: 8px;
-        }
-      }
     </style>
 
     <script>
       (function () {
+        // IDs - change here if needed
         var AD_CLIENT = "ca-pub-8659713391306679";
         var GTAG_ID = "G-4BTC4J2Y6H";
 
@@ -267,8 +191,8 @@
           grant: function () {
             try {
               localStorage.setItem(this._key, "granted");
-              this._load();
             } catch (e) {}
+            this._load();
           },
           deny: function () {
             try {
@@ -276,7 +200,7 @@
             } catch (e) {}
           },
           _load: function () {
-            // Load Google Ads and gtag only here
+            // Load Google Ads and gtag only after consent
             insertScript(
               "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
                 AD_CLIENT,
@@ -295,7 +219,7 @@
           },
         };
 
-        // If previously granted, load immediately (but don't show banner)
+        // Auto-load if previously granted (no banner flash)
         try {
           if (window.ecConsent.isGranted()) {
             window.ecConsent._load();
@@ -304,7 +228,7 @@
           // ignore
         }
 
-        // Provide a method to show banner only after DOM is ready
+        // Show banner only if no choice yet
         window.ecShowConsentIfNeeded = function () {
           try {
             var state = localStorage.getItem("exhaust_consent_ads");
@@ -319,10 +243,7 @@
   </head>
 
   <body>
-    <!-- Skip link -->
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <!-- COOKIE CONSENT BANNER (place immediately after <body>) -->
+    <!-- Cookie consent banner - place early in body, hidden by default -->
     <div
       id="ec-cookie-consent"
       class="ec-cookie-consent"
@@ -352,7 +273,6 @@
 
     <script>
       (function () {
-        // Show banner after DOMContentLoaded only if needed and wire up buttons
         document.addEventListener("DOMContentLoaded", function () {
           try {
             window.ecShowConsentIfNeeded();
@@ -362,7 +282,7 @@
           var deny = document.getElementById("ec-cc-deny");
           var banner = document.getElementById("ec-cookie-consent");
 
-          // hide banner if already chosen
+          // hide banner if decision already made
           try {
             var s = localStorage.getItem("exhaust_consent_ads");
             if (s === "granted" || s === "denied") {
@@ -390,152 +310,159 @@
       })();
     </script>
 
-    <!-- Header / nav -->
     <header>
-      <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="nav-logo">
-          <a href="https://exhaust.contact" title="exhaust.contact home">
-            <img
-              src="/assets/images/exhaust-contact-logo-white.svg"
-              alt="exhaust.contact logo"
-            />
-          </a>
-        </div>
+      <nav class="navbar">
+        <a href="https://exhaust.contact">
+          <img
+            src="/assets/images/exhaust-contact-logo-white.svg"
+            alt="exhaust.contact logo white"
+          />
+        </a>
 
-        <button
-          id="nav-toggle"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle menu"
-          type="button"
-          style="background: none; border: 0; font-size: 24px; cursor: pointer"
-        >
-          ☰
-        </button>
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
 
-        <ul id="main-nav" class="nav-links" role="menubar" aria-hidden="true">
-          <li role="none" class="dropdown-content" aria-haspopup="true">
-            <button type="button" class="btn-menu" aria-expanded="false">
-              Car exhausts
-            </button>
-            <ul class="dropdown" role="menu" aria-label="Car exhausts submenu">
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://exhaust.contact/finder-car-exhaust.html"
-                  >Muffler shops</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://exhaust.contact/car-exhaust-systems.html"
-                  >Articles</a
-                >
-              </li>
-            </ul>
-          </li>
+          <div class="menu">
+            <li class="dropdown-content">
+              <button class="btn-menu">Car exhausts</button>
 
-          <li role="none" class="dropdown-content" aria-haspopup="true">
-            <button type="button" class="btn-menu" aria-expanded="false">
-              Bike exhausts
-            </button>
-            <ul class="dropdown" role="menu" aria-label="Bike exhausts submenu">
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://exhaust.contact/finder-bike-exhaust.html"
-                  >Muffler shops</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://exhaust.contact/motorcycle-exhaust-systems.html"
-                  >Articles</a
-                >
-              </li>
-            </ul>
-          </li>
+              <ul class="dropdown">
+                <li>
+                  <a href="https://exhaust.contact/finder-car-exhaust.html"
+                    >Muffler shops</a
+                  >
+                </li>
+                <li>
+                  <a href="https://exhaust.contact/car-exhaust-systems.html"
+                    >Articles</a
+                  >
+                </li>
+              </ul>
+            </li>
 
-          <li role="none" class="dropdown-content" aria-haspopup="true">
-            <button type="button" class="btn-menu" aria-expanded="false">
-              Navigation
-            </button>
-            <ul class="dropdown" role="menu" aria-label="Navigation submenu">
-              <li role="none">
-                <a role="menuitem" href="https://exhaust.contact">Home</a>
-              </li>
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://cse.google.com/cse?cx=e65aeb354b61640c7#gsc.tab=0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Search</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://exhaust.contact/index.html#form5-1p"
-                  >Contact</a
-                >
-              </li>
-              <li role="none">
-                <a
-                  role="menuitem"
-                  href="https://www.youtube.com/@exhaust.contact"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >YouTube</a
-                >
-              </li>
-              <li role="none">
-                <a role="menuitem" href="/privacy-policy.html" rel="nofollow"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </li>
+            <li class="dropdown-content">
+              <button class="btn-menu">Bike exhausts</button>
+
+              <ul class="dropdown">
+                <li>
+                  <a href="https://exhaust.contact/finder-bike-exhaust.html"
+                    >Muffler shops</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://exhaust.contact/motorcycle-exhaust-systems.html"
+                    >Articles</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="dropdown-content">
+              <button class="btn-menu">Navigation</button>
+
+              <ul class="dropdown">
+                <li><a href="https://exhaust.contact">Home</a></li>
+                <li>
+                  <a
+                    href="https://cse.google.com/cse?cx=e65aeb354b61640c7#gsc.tab=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Search</a
+                  >
+                </li>
+                <li>
+                  <a href="https://exhaust.contact/index.html#form5-1p"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/@exhaust.contact"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >YouTube</a
+                  >
+                </li>
+                <li>
+                  <a href="/privacy-policy.html" rel="nofollow">Privacy Policy</a>
+                </li>
+              </ul>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
 
-    <!-- Banner / LCP image -->
     <div class="banner-container">
       <div class="container-16x9">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              /assets/images/fake-exhaust-vs-real-audi-sq5.webp    1x,
-              /assets/images/fake-exhaust-vs-real-audi-sq5@2x.webp 2x
-            "
-          />
-          <img
-            class="responsive-iframe"
-            src="/assets/images/fake-exhaust-vs-real-audi-sq5.webp"
-            alt="fake exhaust vs real audi sq5"
-            loading="lazy"
-            width="1200"
-            height="675"
-          />
-        </picture>
+        <img
+          class="responsive-iframe"
+          src="/assets/images/fake-exhaust-vs-real-audi-sq5.webp"
+          alt="fake exhaust vs real audi sq5"
+          loading="lazy"
+          width="1200"
+          height="675"
+        />
       </div>
     </div>
 
-    <main id="main-content">
+    <main>
       <article class="article-container">
         <h1>Fake exhaust tips convert to real in Audi SQ5</h1>
 
         <p>
           The Audi SQ5 is an undeniably stylish and capable SUV, but there’s one
           design choice that has frustrated owners since the B9 generation
-          debuted: fake exhaust tips...
+          debuted: fake exhaust tips. Instead of being functional, the shiny
+          oval outlets integrated into the rear bumper are purely cosmetic. The
+          real exhaust pipes actually point downward and remain hidden
+          underneath. Fortunately, many owners have found ways to convert these
+          fake tips into real ones—achieving both visual satisfaction and a
+          deeper, sportier sound.
         </p>
 
-        <!-- rest of article content (unchanged) -->
+        <p>
+          In this article, we’ll explore what SQ5 owners have learned about this
+          popular modification, what to watch out for during the process, and
+          where you can buy the official Audi Sport exhaust tips (part number
+          80A-071-904) to do the same.
+        </p>
+
+        <br />
+
+        <div class="short-container">
+          <div class="container-9x16">
+            <iframe
+              class="responsive-iframe"
+              src="https://www.youtube.com/embed/PVkiMKYRJbE"
+              title="Fake exhaust tips to real – Audi SQ5 gets proper exhaust!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <h2>Why did Audi use fake exhaust tips?</h2>
+        <p>
+          Audi isn’t alone in choosing fake exhaust tips; many premium brands do
+          this to keep the rear bumper design clean, reduce heat exposure, and
+          meet emissions standards. However, many SQ5 owners feel that real,
+          functional exhaust tips offer more authenticity and aesthetic appeal,
+          making the extra effort and cost to retrofit worthwhile.
+        </p>
+
+        <h2>The most popular solution: OEM Audi Sport tips</h2>
+        <p>
+          Many owners choose to upgrade to the OEM Audi Sport exhaust tips (part
+          number 80A-071-904). These aren’t just hollow covers—they feature
+          perforations and internal chambers that slightly deepen the exhaust
+          note, adding a richer sound without becoming too loud.
+        </p>
+
         <p>They can be found directly on eBay:</p>
         <ul>
           <li>
@@ -574,30 +501,42 @@
           </li>
         </ul>
 
-        <figure>
-          <picture>
-            <source
-              type="image/webp"
-              srcset="/assets/images/sq5-real-exhaust-tips-80A071904.webp"
-            />
-            <img
-              src="/assets/images/sq5-real-exhaust-tips-80A071904.webp"
-              alt="sq5 real exhaust tips 80A071904"
-              loading="lazy"
-              width="800"
-              height="450"
-            />
-          </picture>
-          <figcaption>OEM Audi Sport exhaust tips (80A-071-904).</figcaption>
-        </figure>
+        <br />
 
-        <!-- keep the rest of your article content here unchanged -->
+        <img
+          src="/assets/images/sq5-real-exhaust-tips-80A071904.webp"
+          alt="sq5 real exhaust tips 80A071904"
+          loading="lazy"
+          width="800"
+          height="450"
+        />
+
+        <p>
+          While prices can range from around $1,200 to $2,500 depending on
+          location and finish, many owners believe the quality, sound
+          improvement, and OEM fit make them worth it.
+        </p>
+
+        <!-- rest of article unchanged -->
+        <h2>What owners discovered during installation</h2>
+        <p>
+          Owners who attempted this modification themselves often share that it
+          can be more involved than it seems. For some, it took several hours of
+          careful work, using tools like a drill, mini saw, Dremel, and file to
+          cut precise openings in the rear valance. The rear bumper plastic
+          doesn’t have clear guide lines, so patience and careful measuring are
+          essential to achieve a neat look.
+        </p>
+
+        <!-- ... (remaining content omitted for brevity in this snippet but keep it unchanged) -->
       </article>
 
+      <br /><br />
       <aside class="banner-container">
         <a
           href="https://autotalent.com/?ref=exhaust.contact"
           rel="sponsored noopener noreferrer"
+          target="_blank"
         >
           <img
             src="/assets/images/autotalent-exhaust-systems.webp"
@@ -677,45 +616,10 @@
             commission for purchases made through these links. This does not
             affect the price of the product for you.
           </p>
+          <br /><br />
           <p>&copy; exhaust.contact</p>
         </div>
       </div>
     </footer>
-
-    <!-- Small nav accessibility/toggle script (keeps nav behavior local and simple) -->
-    <script>
-      (function () {
-        var toggle = document.getElementById("nav-toggle");
-        var nav = document.getElementById("main-nav");
-        if (!toggle || !nav) return;
-        toggle.addEventListener("click", function () {
-          var expanded = this.getAttribute("aria-expanded") === "true";
-          this.setAttribute("aria-expanded", String(!expanded));
-          if (!expanded) {
-            nav.classList.add("open");
-            nav.setAttribute("aria-hidden", "false");
-          } else {
-            nav.classList.remove("open");
-            nav.setAttribute("aria-hidden", "true");
-          }
-        });
-
-        // Simple behaviour for dropdown buttons (progressive enhancement)
-        var dropdownButtons = document.querySelectorAll(
-          ".dropdown-content > .btn-menu"
-        );
-        dropdownButtons.forEach(function (btn) {
-          btn.addEventListener("click", function () {
-            var parent = btn.parentNode;
-            var expanded = btn.getAttribute("aria-expanded") === "true";
-            btn.setAttribute("aria-expanded", String(!expanded));
-            var submenu = parent.querySelector(".dropdown");
-            if (submenu) {
-              submenu.style.display = expanded ? "none" : "block";
-            }
-          });
-        });
-      })();
-    </script>
   </body>
 </html>
