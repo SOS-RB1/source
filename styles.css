@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   color: white;
@@ -341,4 +341,16 @@ input[type="checkbox"] {
     left: 139px;
     top: 76px;
   }
+}
+.affiliate-disclosure {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 12px 0 20px;
+  padding: 12px 14px;
+  border-left: 4px solid #999;
+  background: #f7f7f7;
+}
+
+.affiliate-link-label {
+  font-weight: 600;
 }
