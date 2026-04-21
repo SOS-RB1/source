@@ -314,6 +314,21 @@ input[type="checkbox"] {
   padding-bottom: 19px;
 }
 
+.affiliate-disclosure {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 12px 0 20px;
+  padding: 12px 14px;
+  border-left: 4px solid #999;
+  background: #f7f7f7;
+  color: #444;
+  border-radius: 6px;
+}
+
+.affiliate-link-label {
+  font-weight: 600;
+}
+
 @media (max-width: 677px) {
   .menu {
     display: none;
@@ -341,18 +356,4 @@ input[type="checkbox"] {
     left: 139px;
     top: 76px;
   }
-}
-.affiliate-disclosure {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 12px 0 20px;
-  padding: 12px 14px;
-  border-left: 4px solid #999;
-  background: #f7f7f7;
-  color: #444;
-  border-radius: 6px;
-}
-
-.affiliate-link-label {
-  font-weight: 600;
 }
