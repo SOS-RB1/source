@@ -306,14 +306,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-.affiliate-disclosure {
-  display: block;
-  background: red !important;
-  color: white !important;
-  padding: 20px !important;
-  border: 5px solid yellow !important;
-}
-
 @media (max-width: 677px) {
   .menu {
     position: absolute;
