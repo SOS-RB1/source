@@ -309,10 +309,15 @@ th {
 
 .affiliate-disclosure {
   display: block;
-  background: red !important;
-  color: white !important;
-  padding: 20px !important;
-  border: 5px solid yellow !important;
+  margin: 14px 0 22px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  font-style: italic;
+  color: #555;
+  background: #f6f6f6;
+  border-left: 4px solid #c9c9c9;
+  border-radius: 6px;
 }
 
 @media (max-width: 677px) {
