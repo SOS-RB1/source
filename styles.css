@@ -15,6 +15,43 @@ p {
   margin: 1em 0;
 }
 
+.affiliate-disclosure {
+  margin: 12px 0 20px;
+  padding: 12px 14px;
+  border-left: 4px solid #999;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.affiliate-disclosure p,
+.affiliate-disclosure span,
+.affiliate-disclosure strong,
+.affiliate-disclosure b,
+.affiliate-disclosure em,
+.affiliate-disclosure li {
+  color: #444;
+}
+
+.affiliate-disclosure a,
+.affiliate-disclosure a:visited {
+  color: #444;
+  text-decoration: underline;
+}
+
+.affiliate-disclosure a:hover,
+.affiliate-disclosure a:focus {
+  color: #222;
+  text-decoration: underline;
+}
+
+.affiliate-link-label {
+  font-weight: 600;
+  color: #444;
+}
+
 main {
   padding: 10px;
 }
@@ -304,43 +341,6 @@ footer a {
 footer a:hover {
   color: rgb(214, 153, 255);
   text-decoration: underline;
-}
-
-.affiliate-disclosure {
-  margin: 12px 0 20px;
-  padding: 12px 14px;
-  border-left: 4px solid #999;
-  border-radius: 6px;
-  background-color: #f7f7f7;
-  color: #444;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.affiliate-disclosure p,
-.affiliate-disclosure span,
-.affiliate-disclosure strong,
-.affiliate-disclosure b,
-.affiliate-disclosure em,
-.affiliate-disclosure li {
-  color: #444;
-}
-
-.affiliate-disclosure a,
-.affiliate-disclosure a:visited {
-  color: #444;
-  text-decoration: underline;
-}
-
-.affiliate-disclosure a:hover,
-.affiliate-disclosure a:focus {
-  color: #222;
-  text-decoration: underline;
-}
-
-.affiliate-link-label {
-  font-weight: 600;
-  color: #444;
 }
 
 @media (max-width: 677px) {
